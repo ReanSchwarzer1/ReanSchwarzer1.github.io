@@ -1,7 +1,6 @@
 html,
 body {
-  min-height: 100%;
-  max-height: 100%;
+  margin: auto;
   max-width: 1366px;
   min-width: 900px;
   font-family: 'Nunito', sans-serif;
@@ -18,11 +17,24 @@ main {
 
 ol {
   list-style: none;
+  text-shadow: darkblue;
+  text-decoration-color: darkcyan;
 }
 
 #imgalign { 
   width: 200px; 
   text-align:right; 
+}
+
+#banner {
+  margin: auto;
+  position: relative;
+  width: 1100px;
+  height: 250px;
+  /*background-color: #d96f5b;*/
+  overflow: hidden;
+  animation: changingbackground 5s infinite;
+  animation-play-state: running;
 }
 
 .col {
@@ -31,17 +43,66 @@ ol {
   padding: 2%;
   margin: 1%;
   width: 25%;
+  background-image: linear-gradient(-45deg, lightsteelblue 0, skyblue 100%);
+  box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
+    0 11px 21px 0 rgba(255, 166, 220, 0.004);
+  border-bottom: 20px solid cadetblue;
+  font-weight:normal;
+}
+
+.col:hover{
+  padding: 3%;
+  display: inline-grid;
+  margin: 1%;
+  font-size: 15px;
+  text-transform:capitalize;
+  background-image: linear-gradient(-45deg, #b8718f 0, #af63c4 100%);
+
+  font-weight: bolder;
 }
 
 .navbar {
   position: relative;
   justify-content: space-between;
-  padding: 10px; }
+  padding: 10px;
+
+ }
 
 .introcol {
   font-weight: 2500;
 }
-  
+
+.intro  {
+  position: absolute;
+  top: 1%;
+  right: 50%;
+}
+
+.logorotate {
+  animation: rotation 1s infinite alternate;
+  transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+a:link, a:visited {
+  color:darkred;
+  text-decoration: none;
+  font-weight:normal;
+}
+
+a:hover{
+  color:darkturquoise;
+  font-weight: bolder;
+}
+
 
   body {
     background-color:thistle;
@@ -50,6 +111,6 @@ ol {
 
 .footer {
   position: absolute;
-  top: 95%;
+  top: 110%;
   right: 45%;
 }
