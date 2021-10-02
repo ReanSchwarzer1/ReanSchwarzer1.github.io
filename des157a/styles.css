@@ -73,7 +73,7 @@ ol {
 #shield {
   width: 100px;
   height: 100px;
-  bottom: 150px;
+  bottom: 230px;
   position: relative;
 }
 
@@ -85,7 +85,7 @@ ol {
 }
 
 .rotshu:hover {
-  animation: rotation 1s infinite linear;
+  animation: rotation 700ms infinite linear;
   cursor: pointer;
 }
 
