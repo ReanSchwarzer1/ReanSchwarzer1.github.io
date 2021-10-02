@@ -69,13 +69,20 @@ ol {
  }
 
 .introcol {
-  font-weight: 2500;
+  font-weight:bolder;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.introcoll {
+  display: inline-block;
+  vertical-align:bottom;
 }
 
 .intro  {
-  position: absolute;
-  top: 1%;
-  right: 50%;
+  position: relative;
+ /* top: 1%;
+  right: 50%; */
 }
 
 .logorotate {
@@ -103,14 +110,13 @@ a:hover{
   font-weight: bolder;
 }
 
-
   body {
     background-color:thistle;
     background-size: cover;
   }
 
 .footer {
-  position: absolute;
+  position:static;
   top: 110%;
   right: 45%;
 }
