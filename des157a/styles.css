@@ -31,11 +31,93 @@ ol {
   position: relative;
   width: 1100px;
   height: 250px;
-  /*background-color: #d96f5b;*/
   overflow: hidden;
   animation: changingbackground 5s infinite;
   animation-play-state: running;
 }
+
+#banner:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+#banner:hover #sword {
+  transform: scale(0.99) translate(170px);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(0.930, 0.235, 0.115, 0.860);
+}
+
+#banner:hover #shield {
+  transform: scale(0.99) translate(-170px);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(0.930, 0.235, 0.115, 0.860);
+}
+
+#banner:hover #shuriken {
+  animation-name: shurikenattaccc;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+#sword {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+#shield {
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  right: 250px;
+  position: absolute;
+}
+
+#shuriken {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.rotshu:hover {
+  animation: rotation 1s infinite linear;
+  cursor: pointer;
+}
+
+
+@keyframes shurikenattaccc {
+  0% {
+      left: 0;
+  }
+  33% {
+      left: calc(33% - 60px);
+      bottom: 70%;
+      width: 60px;
+      height: 60px;
+  }
+  66% {
+      left: calc(66% - 40px);
+      bottom: 0;
+      width: 40px;
+      height: 40px;
+  }
+  100% {
+      left: calc(100% - 20px);
+      bottom: 50%;
+      width: 20px;
+      height: 20px;
+  }
+}
+
 
 .col {
   display: inline-grid;
