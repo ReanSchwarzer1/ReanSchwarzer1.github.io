@@ -85,7 +85,7 @@ ol {
   position: relative;
 }
 
-.rotshu {
+#banner:hover .rotshu {
   animation: rotation 800ms infinite alternate;
   cursor: pointer;
 }
