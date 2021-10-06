@@ -9,12 +9,12 @@
         <h2>Check out the console for the output</h2>
         <script>
             //Write a program that takes a lowercase string and capitalizes the first letter of each word in the string.
-            var str = prompt("Input any lowercase string");
-            str = str.split(" ");
-            var output = "";
-            for (var i = 0, len = str.length; i < len; i++)
+            var str = prompt("Input any lowercase string"); //the prompt method in js asks the user for a prompt by displaying a dialog box
+            str = str.split(" "); //this method splits the string from the input into an array of substrings
+            var output = ""; 
+            for (var i = 0, len = str.length; i < len; i++) //the loop starts from the first substring, takes the length of the whole string (we are using the length method that returns that gets the total length to iterate on for the loop)
             {
-                output = str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+                output = str[i][0].toUpperCase() + str[i].substr(1); //here we are using toUpperCase method to the index[0] (the first substring) to make it uppercase and then adding all the substrings from index 1
             }
             console.log(output);
         </script>
