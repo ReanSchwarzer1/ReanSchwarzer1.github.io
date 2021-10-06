@@ -173,7 +173,7 @@ ol {
   display: inline-grid;
   background-color:lightsteelblue;
   padding: 2%;
-  margin: 1%;
+  margin: 2%;
   width: 25%;
   background-image: linear-gradient(-45deg, lightsteelblue 0, skyblue 100%);
   box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
