@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <script>
+        //const button = document.querySelector("button");
+        let inputStr, i, outputStr = "", randomStr = "";
+        document.querySelector('#btn').addEventListener('click', prmt(inputStr));
+
+        function prmt() //This function takes an input from the user (a lowercase string) through a prompt when the user clicks the button and stores the value inside the inputStr variable.
+        {
+            inputStr = prompt("Input any lowercase string", ""); 
+            alert(inputStr);
+
+            if (inputStr == "") 
+            {
+                document.getElementById("display").innerHTML = "You haven't inputed any lowercase string"; //incase the user doesn't input any string, this gets displayed in the webpage.
+            }
+
+            otpt(inputStr); //recursive nature of functions - calling function otpt with reference passing of the inputStr value to it
+            //rndm(inputStr);
+        }
+        
+        function otpt() //Function takes the input, and outputs out a string where the first letter is in uppercase.
+        {
+            inputStr = inputStr.split(" "); //this method splits the string from the input into an array of substrings
+
+            for (i = 0, len = inputStr.length; i < len; i++) /* the loop starts from the first substring, takes the length of the whole string 
+                (we are using the length method that returns that gets the total length to iterate on for the loop) */
+            {
+                outputStr = inputStr[i][0].toUpperCase() + inputStr[i].substr(1); 
+                //here we are using toUpperCase method to the index[0] (the first substring) to make it uppercase and then adding all the substrings from index 1
+            }
+            document.getElementById("display").innerHTML = outputStr; //overrides the div with id = display with the output string
+            document.getElementById("display").style.color = "blue"; //overrides the color of the div with id = display with the color blue
+        }
+    </script>
+    <link rel="shortcut icon" href="../images/ablogo.png" />
+</head>
+<body style="text-align: center;">
+    <h1>Experiment 2</h1>
+    <h2>Ram's "String Uppercaser" Webpage</h2>
+    <h3>Input any lowercase string by clicking on the button:</h3>
+
+    <nav>
+        <label>Click here to input a lowercase string: <button id = "btn" onclick="prmt()">Click Here</button></label>
+        <div id="display" style="font-size: 350%;"></div>
+        <div id="random" style="font-size: 200%;"></div>
+    </nav>
+</body>
+</html>
