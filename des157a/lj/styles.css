@@ -45,17 +45,21 @@ a:hover {
   
 .col p { 
     margin: 0;
-    width: 50%;
+    width: 48%;
     height: 500px;
+    text-align:justify;
+    text-justify:inter-word;
 }
 
 .col2 p {
     margin: 0;
-    width: 50%;
+    width: 48%;
     float: right;
     position: relative;
-    bottom: 515px;
+    bottom: 500px;
     left: 10px;
+    text-align:justify;
+    text-justify:inter-word;
 }
 
 h1 {
