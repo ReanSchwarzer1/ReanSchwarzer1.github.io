@@ -1,7 +1,6 @@
 html,
 body {
     margin: auto;
-    /*padding: 30px;*/
     max-width: 1366px;
     min-width: 800px;
 
@@ -45,20 +44,17 @@ a:hover {
 }
   
 .col p { 
-    display: inline-block;
     margin: 0;
     width: 50%;
     height: 500px;
 }
 
 .col2 p {
-    display: inline-block;
     margin: 0;
     width: 50%;
     float: right;
-    height: 500px;
     position: relative;
-    bottom: 560px;
+    bottom: 515px;
     left: 10px;
 }
 
@@ -80,7 +76,7 @@ article {
 }
 
 article p {
-    line-height: 2;
+    line-height: 40px;
 }
 
 article h2 {
@@ -90,7 +86,7 @@ article h2 {
 }
 
 article time {
-    color: #c5bc92;
+    color: #F36C0C;
     margin: 10px 0px 10px 0px;
     font-size: 1.25em;
 }
@@ -102,11 +98,11 @@ article img {
 }
 
 #container {
-    padding-bottom: 350px;
+    padding-bottom: 300px;
 }
 
 main {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 footer {
