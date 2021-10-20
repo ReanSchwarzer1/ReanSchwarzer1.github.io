@@ -1,0 +1,21 @@
+@font-face {font-family: "Meteoric-Bold";
+    src: url("fonts/Meteoric-Bold/Meteoric-Bold.ttf");
+    src: url("fonts/Meteoric-Bold/@font-face/82a1a6e5316d84f1b8e2fa22a97e1211.eot");
+    src: url("fonts/Meteoric-Bold/@font-face/82a1a6e5316d84f1b8e2fa22a97e1211.woff") format("woff"),
+    url("fonts/Meteoric-Bold/Meteoric-Bold.otf") format("opentype"),
+    url("fonts/Meteoric-Bold/@font-face/82a1a6e5316d84f1b8e2fa22a97e1211.svg") format("svg");
+  }
+
+html,
+body {
+    margin: auto;
+    max-width: 1366px;
+    min-width: 800px;
+
+    font-family: "Meteoric-Bold", sans-serif;
+
+    color: purple;
+
+    position: relative;
+    background: black;
+}
