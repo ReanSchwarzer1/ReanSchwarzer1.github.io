@@ -14,8 +14,128 @@ body {
 
     font-family: "Meteoric-Bold", sans-serif;
 
-    color: purple;
+    color: plum;
 
     position: relative;
-    background: black;
+    background: #000000;
+
+    animation-name: bgChange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bgChange {
+  0% {
+    background: #000009;
+  }
+  100% {
+    background: #000010;
+  }
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+}
+
+a {
+  color: plum;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #153243;
+}
+
+@keyframes space {
+}
+
+#h1 {
+  position: relative;
+  width: 750px;
+  height: 100px;
+  padding-top: 55px;
+  margin: auto;
+  animation: titleAnim 3s ease-in-out infinite;
+}
+
+
+@keyframes titleAnim {
+  0% {top: 0;}
+  50% {top: 20px;}
+  100% {top: 0;}
+}
+
+.container {
+  position: relative;
+  color: paleturquoise;
+  max-width: 500px;
+  margin: auto;
+  padding: 1.5em 2em 1.5em 2em;
+  background-color: #153243;
+  border-radius: 50px;
+  left: 400px;
+}
+
+
+#ipt {
+  height: 500px;
+}
+
+.slideout {
+  animation: slideoutframes 3s forwards;
+}
+
+@keyframes slideoutframes {
+  0% {top: 0;}
+  100% {top: 200vh;}
+}
+
+#otpt {
+  top: 200vh;
+  color: paleturquoise;
+  /* height: 700px; */
+}
+
+.slidein {
+  animation: slideinframes 3s forwards;
+}
+
+@keyframes slideinframes {
+  0% {top: 100vh;}
+  100% {top: calc(-900px - 4em);}
+}
+
+#madlib {
+  line-height: 2;
+}
+
+label {
+  display: block;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: palevioletred;
+}
+
+ipt {
+  margin: 10px 0px 20px 20px;
+  border: 5px palevioletred;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #284b63;
+  color: paleturquoise;
+}
+
+#submit {
+  display: block;
+  margin: auto
 }
