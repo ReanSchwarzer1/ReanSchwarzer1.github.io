@@ -14,13 +14,13 @@ body {
 
     font-family: "Meteoric-Bold", sans-serif;
 
-    color: plum;
+    color: palevioletred;
 
     position: relative;
     background: #000000;
 
     animation-name: bgChange;
-    animation-duration: 1s;
+    animation-duration: 800ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -43,7 +43,7 @@ main {
 }
 
 a {
-  color: plum;
+  color: palevioletred;
   text-decoration: none;
 }
 
@@ -54,31 +54,63 @@ a:hover {
 @keyframes space {
 }
 
-#h1 {
+#title {
   position: relative;
   width: 750px;
   height: 100px;
-  padding-top: 55px;
+  padding-top: 10px;
   margin: auto;
-  animation: titleAnim 3s ease-in-out infinite;
 }
 
-
-@keyframes titleAnim {
-  0% {top: 0;}
-  50% {top: 20px;}
-  100% {top: 0;}
-}
 
 .container {
   position: relative;
-  color: paleturquoise;
-  max-width: 500px;
+  color: rebeccapurple;
+  max-width: 600px;
   margin: auto;
   padding: 1.5em 2em 1.5em 2em;
-  background-color: #153243;
-  border-radius: 50px;
-  left: 400px;
+  left: 360px;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;  
+}
+
+
+
+@keyframes neonGlow {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px rgb(9, 137, 241),
+      0 0 11px rgb(87, 30, 153),
+      0 0 19px rgb(26, 5, 216),
+      0 0 40px rgb(91, 13, 94),
+      0 0 80px #0fa,
+      0 0 90px rgb(82, 70, 110),
+      0 0 100px rgb(148, 238, 208),
+      0 0 150px rgb(255, 16, 215);
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+
+h1, footer {
+  animation: neonGlow 5s infinite alternate;   
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;  
 }
 
 
@@ -87,7 +119,7 @@ a:hover {
 }
 
 .slideout {
-  animation: slideoutframes 3s forwards;
+  animation: slideoutframes 1s forwards;
 }
 
 @keyframes slideoutframes {
@@ -96,13 +128,13 @@ a:hover {
 }
 
 #otpt {
-  top: 200vh;
-  color: paleturquoise;
+  top: 100vh;
+  color: rebeccapurple;
   /* height: 700px; */
 }
 
 .slidein {
-  animation: slideinframes 3s forwards;
+  animation: slideinframes 1s forwards;
 }
 
 @keyframes slideinframes {
@@ -112,6 +144,10 @@ a:hover {
 
 #madlib {
   line-height: 2;
+  position: relative;
+  bottom: 500px;
+  color: palevioletred;
+  animation: neonGlow 1.5s infinite alternate;
 }
 
 label {
@@ -122,20 +158,21 @@ label {
 
 footer {
   text-align: center;
-  padding: 25px;
+  padding: 10px;
   color: palevioletred;
 }
 
-ipt {
-  margin: 10px 0px 20px 20px;
-  border: 5px palevioletred;
+input {
+  margin: 0.4px 0px 20px 20px;
+  border: 5px rebeccapurple;
   border-radius: 5px;
-  padding: 20px;
-  background-color: #284b63;
-  color: paleturquoise;
+  background-color: rebeccapurple;
+  color: black;
+
 }
 
 #submit {
   display: block;
   margin: auto
 }
+
