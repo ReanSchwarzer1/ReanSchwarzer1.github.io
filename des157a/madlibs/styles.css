@@ -153,10 +153,10 @@ footer {
 }
 
 .slideout {
-  animation: slideoutframes 1s forwards;
+  animation: disappear 1s forwards;
 }
 
-@keyframes slideoutframes {
+@keyframes disappear {
   0% {visibility: hidden;}
   100% {visibility: hidden;}
 }
@@ -166,10 +166,10 @@ footer {
 }
 
 .slidein {
-  animation: slideinframes 1s forwards;
+  animation: display 1s forwards;
 }
 
-@keyframes slideinframes {
+@keyframes display {
   0% {top: 500px;}
   100% {top: 800px;}
 }
