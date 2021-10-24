@@ -152,11 +152,11 @@ footer {
   height: 500px;
 }
 
-.slideout {
-  animation: slideoutframes 1s forwards;
+.disappear {
+  animation: dis 1s forwards;
 }
 
-@keyframes slideoutframes {
+@keyframes dis {
   0% {visibility: hidden;}
   100% {visibility: hidden;}
 }
@@ -165,11 +165,11 @@ footer {
   color: rebeccapurple;
 }
 
-.slidein {
-  animation: slideinframes 1s forwards;
+.display {
+  animation: disp 1s forwards;
 }
 
-@keyframes slideinframes {
+@keyframes disp {
   0% {top: 500px;}
   100% {top: 800px;}
 }
