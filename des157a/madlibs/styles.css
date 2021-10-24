@@ -70,7 +70,7 @@ a:hover {
 
 @keyframes move-spaceship {
   25% {
-    transform: translate(200px);
+    transform: translate(100px);
   }
   75% {
     transform: rotate(30deg);
@@ -217,7 +217,7 @@ bh-container {
   bottom: 100px;
 
   animation-fill-mode: both;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
   animation-name: init;
   animation-duration: 4s;
   animation-iteration-count: 1;
@@ -236,7 +236,7 @@ bh-container {
 	}
 }
 
-bh-photon-ring {
+photon-ring {
   width: 35vw;
   height: 35vw;
   border-radius: 100%;
@@ -265,7 +265,7 @@ bh-photon-ring {
   }
 }
 
-bh-accretion {
+accretion {
   width: 30vw;
   height: 30vw;
   background: var(--accretion);
@@ -292,14 +292,14 @@ bh-accretion {
   }
 }
 
-bh-backdrop {
+backdrop {
   width: 100vw;
   height: 100vh;
   grid-area: bh-shadow;
 
 }
 
-bh-shadow {
+bhshadow {
   width: 20vw;
   height: 20vw;
   background: black;
