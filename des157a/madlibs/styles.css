@@ -247,7 +247,7 @@ bh-container {
 	}
 }
 
-photon-ring {
+#photon-ring {
   width: 35vw;
   height: 35vw;
   border-radius: 100%;
@@ -276,7 +276,7 @@ photon-ring {
   }
 }
 
-accretion {
+#accretion {
   width: 30vw;
   height: 30vw;
   background: var(--accretion);
@@ -303,14 +303,14 @@ accretion {
   }
 }
 
-backdrop {
+#backdrop {
   width: 100vw;
   height: 100vh;
   grid-area: bh-shadow;
 
 }
 
-bhshadow {
+#bhshadow {
   width: 20vw;
   height: 20vw;
   background: black;
