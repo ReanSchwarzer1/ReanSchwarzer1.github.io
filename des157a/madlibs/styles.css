@@ -36,9 +36,6 @@ header {
   text-align: center;
 }
 
-main {
-}
-
 a {
   color: palevioletred;
   text-decoration: none;
@@ -166,7 +163,6 @@ footer {
 
 #otpt {
   color: rebeccapurple;
-  /* height: 700px; */
 }
 
 .slidein {
