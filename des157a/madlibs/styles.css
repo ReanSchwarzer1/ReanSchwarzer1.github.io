@@ -16,7 +16,7 @@ body {
 
     color: palevioletred;
 
-    position: relative;
+    position: static;
     background-color:black;
     background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px); 
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
@@ -34,7 +34,6 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 main {
@@ -53,7 +52,7 @@ a:hover {
 }
 
 #title {
-  position: relative;
+  position: static;
   width: 750px;
   height: 100px;
   padding-top: 10px;
@@ -61,9 +60,9 @@ a:hover {
 }
 
 #spaceship {
-  position: relative;
-  bottom: 300px;
-  right: 200px;
+  position: absolute;
+  bottom: 100px;
+  right: 900px;
   transform: rotate(0deg);
   animation: move-spaceship 30s linear;
 }
@@ -91,13 +90,12 @@ input[type=text]:focus {
 
 
 .container {
-  position: relative;
+  position: absolute;
   color: rebeccapurple;
   max-width: 600px;
-  margin-top: -850px;
-  margin-left: 350px;
   padding: 1.5em 2em 1.5em 2em;
-  left: 360px;
+  bottom: 100px;
+  left: 900px;
   border: 0.2rem solid #fff;
   border-radius: 2rem;
   padding: 0.4em;
@@ -128,7 +126,7 @@ input[type=text]:focus {
   }
 }
 
-h1, footer {
+h1 {
   animation: neonGlow 5s infinite alternate;   
   border: 0.2rem solid #fff;
   border-radius: 2rem;
@@ -141,6 +139,17 @@ h1, footer {
               inset 0 0 1.3rem #bc13fe;  
 }
 
+footer {
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;  
+}
 
 #ipt {
   height: 500px;
@@ -151,12 +160,11 @@ h1, footer {
 }
 
 @keyframes slideoutframes {
-  0% {top: 0;}
-  100% {top: 200vh;}
+  0% {visibility: hidden;}
+  100% {visibility: hidden;}
 }
 
 #otpt {
-  top: 100vh;
   color: rebeccapurple;
   /* height: 700px; */
 }
@@ -166,13 +174,13 @@ h1, footer {
 }
 
 @keyframes slideinframes {
-  0% {top: 100vh;}
-  100% {top: calc(-900px - 4em);}
+  0% {top: 500px;}
+  100% {top: 800px;}
 }
 
 #madlib {
   line-height: 2;
-  position: relative;
+  position: static;
   bottom: 500px;
   color: palevioletred;
   animation: neonGlow 1.5s infinite alternate;
@@ -186,8 +194,10 @@ label {
 
 footer {
   text-align: center;
-  padding: 10px;
-  margin-top: 80px;
+  padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 990px;
   color: palevioletred;
 }
 
@@ -217,13 +227,11 @@ input {
 bh-container {
   display: grid;
   place-items: center;
+  position: absolute;
+  right: 350px;
+
   grid-template-areas: "bh-shadow";
   animation: colorSpan 10s ease infinite;
-  overflow: hidden;
-  position: relative;
-  right: 500px;
-  bottom: 100px;
-
   animation-fill-mode: both;
   transition-timing-function: ease-in-out;
   animation-name: init;
