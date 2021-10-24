@@ -179,7 +179,6 @@ footer {
   position: static;
   bottom: 500px;
   color: palevioletred;
-  animation: neonGlow 1.5s infinite alternate;
 }
 
 label {
