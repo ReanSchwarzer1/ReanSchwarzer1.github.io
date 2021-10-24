@@ -310,6 +310,10 @@ bh-container {
 
 }
 
+#hide {
+  visibility: hidden;
+}
+
 #bhshadow {
   width: 20vw;
   height: 20vw;
