@@ -65,12 +65,12 @@ a:hover {
   bottom: 300px;
   right: 200px;
   transform: rotate(0deg);
-  animation: move-spaceship 30s;
+  animation: move-spaceship 30s linear;
 }
 
 @keyframes move-spaceship {
   25% {
-    transform: translate(500px);
+    transform: translate(200px);
   }
   75% {
     transform: rotate(30deg);
@@ -79,6 +79,8 @@ a:hover {
     transform: translateY(-500px);
   }
 }
+
+
 
 .container {
   position: relative;
