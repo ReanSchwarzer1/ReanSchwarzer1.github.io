@@ -20,9 +20,9 @@
         for (let field of document.querySelectorAll("ipt[type=text]"))
             field.value = "";
 
-        let text = `High Alert Tranmission: Captain. ${name1[0].toUpperCase()}${name1.substring(1).toLowerCase()} here, we are in need of immediate support! The ${noun1[0].toUpperCase()}${noun1.substring(1).toLowerCase()} can no longer maintain it's thrusters.
-         We have accidentally warped near a ${adj1.toLowerCase()} black-hole, 10 times the size of our system's! Please help us to ${verb1.toLowerCase()} and send the best rescue forces from the Star-ship alliance! 
-         I have primed the ship's AI to handle a ${adj2.toLowerCase()} warp towards the ${noun2.toLowerCase()} system near our planet ${noun3[0].toUpperCase()}${noun3.substring(1).toLowerCase()} which could potentially rip the ship apart! [Transimission Lost...]`;
+        let text = `High Alert Tranmission: Captain. ${name1.toUpperCase()} here, we are in need of immediate support! The ${noun1.toUpperCase()} can no longer maintain it's thrusters.
+         We have accidentally warped near a ${adj1.toUpperCase()} black-hole, 10 times the size of our system! Please help us to ${verb1.toUpperCase()} and send the best rescue forces from the Star-ship alliance! 
+         I have primed the ship's AI to handle a ${adj2.toUpperCase()} warp towards the ${noun2.toUpperCase()} system near our planet ${noun3.toUpperCase()} which could potentially rip the ship apart! [Transimission Lost...]`;
         ipt.classList.add("slideout");
         otpt.classList.add("slidein");
         madlib.innerHTML = text;
