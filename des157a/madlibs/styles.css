@@ -87,12 +87,12 @@ input[type=text]:focus {
 
 
 .container {
-  position: relative;
+  position: absolute;
   color: rebeccapurple;
   max-width: 600px;
   padding: 1.5em 2em 1.5em 2em;
-  top: 50px;
-  left: 750px;
+  bottom: 100px;
+  left: 900px;
   border: 0.2rem solid #fff;
   border-radius: 2rem;
   padding: 0.4em;
