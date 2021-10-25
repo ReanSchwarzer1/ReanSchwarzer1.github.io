@@ -215,7 +215,7 @@ input {
 /* black-hole css */
 
 :root {
-  --photon: rgb(221, 224, 8);
+  --photon: rgb(221, 224, 8);  /* colors for the black hole */
   --accretion: rgb(196, 49, 49);
 }
 
