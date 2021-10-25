@@ -165,18 +165,19 @@ footer {
   color: rebeccapurple;
 }
 
+
 .slidein {
   animation: display 1s forwards;
 }
 
 @keyframes display {
   0% {top: 500px;}
-  100% {top: 800px;}
+  100% {left: 800px;}
 }
 
 #madlib {
   line-height: 2;
-  position: static;
+  position: absolute;
   bottom: 500px;
   color: palevioletred;
 }
