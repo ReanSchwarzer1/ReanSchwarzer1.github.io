@@ -42,6 +42,12 @@ a:hover {
     text-decoration: none;
     background: #78353F;
 }
+
+#pic {
+    left: 250px;
+    position: relative;
+}
+
   
 .col p { 
     margin: 0;
