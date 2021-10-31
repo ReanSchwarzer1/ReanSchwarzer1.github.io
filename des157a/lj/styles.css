@@ -44,8 +44,9 @@ a:hover {
 }
 
 #pic {
-    left: 250px;
-    position: relative;
+    left: 750px;
+    top: 450px;
+    position: absolute;
 }
 
   
