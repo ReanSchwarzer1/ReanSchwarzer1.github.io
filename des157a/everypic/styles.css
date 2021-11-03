@@ -11,6 +11,8 @@ body {
     max-width: 1366px;
     min-width: 900px;
     background-image: url("./images/egypt.png");
+    overflow-y: hidden;
+    display: flex;
 }
 
 header {
