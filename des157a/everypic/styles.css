@@ -1,0 +1,161 @@
+@font-face {font-family: "ThroneOfEgyptRegular";
+    src: url("./fonts/ThroneOfEgyptRegular-AoM7.ttf");
+}
+@font-face {font-family: "Egyptsilhous";
+    src: url("./fonts/Egyptsilhous-3lYZ.ttf");
+}
+
+
+html,
+body {
+    max-width: 1366px;
+    min-width: 900px;
+    background-image: url("./images/egypt.png");
+}
+
+header {
+    position: fixed;
+    padding: 10px;
+    background-color: #7D543E;
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    font-size: 30px;
+    font-family: "ThroneOfEgyptRegular";
+}
+
+header ul { margin: 0px 100px; float: right; }
+header ul li { list-style: none; float: left; margin: 0px; padding: 13px; text-transform: uppercase;}
+header ul li a { color: #EB7130; list-style: none; text-decoration: none;}
+header ul li a:hover { color: #fff; }
+header span { line-height: 1px; }
+
+.cont {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#title {
+    font-size: 40px;
+    color: #EB7130;
+}
+
+#chars {
+    font-size: 30px;
+    color: #EB7130;
+    font-family: "Egyptsilhous";
+}
+
+#gallery-text {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    font-family: "ThroneOfEgyptRegular";
+    color:#7D543E;
+    font-size: 50px;
+}
+
+.gallery1 {
+    position: absolute;
+    max-height: 500px;
+    max-width: 500px;
+    left: 1%;
+    top: 100px;
+    margin: 0 auto;
+    border: 5px double
+    #7D543E;
+    width: 100%;
+    height: 100%; 
+}
+
+.gallery2 {
+    position: absolute;
+    max-height: 500px;
+    max-width: 500px;
+    left: 40%;
+    top: 100px;
+    margin: 0 auto;
+    border: 5px double 
+    #7D543E;
+    width: 100%;
+    height: 100%; 
+}
+
+.gallery3 {
+    position: absolute;
+    max-height: 500px;
+    max-width: 500px;
+    left: 80%;
+    top: 100px;
+    margin: 0 auto;
+    border: 5px double
+    #7D543E;
+    width: 100%;
+    height: 100%; 
+}
+
+.gallery1 img {
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    box-shadow: -3px 1px 5px rgba(0,0,0,.5);
+}
+
+.gallery2 img {
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    box-shadow: -3px 1px 5px rgba(0,0,0,.5);
+}
+
+.gallery3 img {
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    box-shadow: -10px 10px 15px rgba(0,0,0,.5);
+}
+
+.gallery1 img:hover {
+    z-index: 20;
+    transform: scale(1.5) rotate(-10deg);
+} 
+.gallery2 img:hover {
+    z-index: 20;
+    transform: scale(1.5) rotate(10deg);
+} 
+.gallery3 img:hover {
+    z-index: 20;
+    transform: scale(1.5) rotate(-10deg);
+} 
+
+.gallery1 img:not(:hover) {transform: scale(1.1);} 
+.gallery2 img:not(:hover) {transform: scale(1.1);} 
+.gallery3 img:not(:hover) {transform: scale(1.1);} 
+
+.img1 {left: 5rem; top: 10rem;}
+.img2 {left: 15rem; top: 5rem;}
+.img3 {right: 10rem; top: 8rem;}
+.img4 {left: 15rem; top: 6rem;}
+.img5 {left: 10rem; top: 1rem;}
+
+.img6 {left: 5rem; top: 2rem;}
+.img7 {left: 15rem; top: 5rem;}
+.img8 {right: 10rem; top: 8rem;}
+.img9 {left: 15rem; top: 10rem;}
+.img10 {left: 10rem; top: 7rem;}
+
+.img11 {left: 5rem; top: 10rem;}
+.img12 {left: 10rem; top: 7rem;}
+.img13 {right: 2rem; top: 2rem;}
+.img14 {left: 6rem; top: 2rem;}
+.img15 {left: 10rem; top: 1rem;}
