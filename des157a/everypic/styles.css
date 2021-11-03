@@ -52,11 +52,33 @@ header span { line-height: 1px; }
     color: #EB7130;
     font-family: "Egyptsilhous";
 }
-#hidden1, #hidden2, #hidden3 {
+#hidden1 {
+    visibility: hidden;
+}
+#hidden2 {
+    visibility: hidden;
+}
+#hidden3 {
     visibility: hidden;
 }
 
-#gallery-text1, #gallery-text2, #gallery-text3 {
+#gallery-text1 {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    font-family: "ThroneOfEgyptRegular";
+    color:#7D543E;
+    font-size: 50px;
+}
+#gallery-text2 {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    font-family: "ThroneOfEgyptRegular";
+    color:#7D543E;
+    font-size: 50px;
+}
+#gallery-text3 {
     position: absolute;
     bottom: 10px;
     float: left;
