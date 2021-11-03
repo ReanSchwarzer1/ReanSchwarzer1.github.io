@@ -52,8 +52,11 @@ header span { line-height: 1px; }
     color: #EB7130;
     font-family: "Egyptsilhous";
 }
+#hidden1, #hidden2, #hidden3 {
+    visibility: hidden;
+}
 
-#gallery-text {
+#gallery-text1, #gallery-text2, #gallery-text3 {
     position: absolute;
     bottom: 10px;
     float: left;
