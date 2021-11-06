@@ -28,6 +28,16 @@ header {
     font-size: 30px;
     font-family: "ThroneOfEgyptRegular";
 }
+ul li a {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: #ffdf9e;
+}
 
 header ul { margin: 0px 100px; float: right; }
 header ul li { list-style: none; float: left; margin: 0px; padding: 13px; text-transform: uppercase;}
@@ -100,7 +110,11 @@ header span { line-height: 1px; }
     #7D543E;
     width: 100%;
     height: 100%; 
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+    background: #ffdf9e; 
+    background-image: url(./images/noise.png);
 }
+
 
 .gallery2 {
     position: absolute;
@@ -112,20 +126,26 @@ header span { line-height: 1px; }
     border: 5px double 
     #7D543E;
     width: 100%;
-    height: 100%; 
+    height: 100%;
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+    background: #ffdf9e; 
+    background-image: url(./images/noise.png);
 }
 
 .gallery3 {
     position: absolute;
     max-height: 500px;
     max-width: 500px;
-    left: 80%;
+    left: 79%;
     top: 100px;
     margin: 0 auto;
     border: 5px double
     #7D543E;
     width: 100%;
-    height: 100%; 
+    height: 100%;
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+	background: #ffdf9e; 
+    background-image: url(./images/noise.png);
 }
 
 .gallery1 img {
@@ -155,14 +175,17 @@ header span { line-height: 1px; }
 .gallery1 img:hover {
     z-index: 20;
     transform: scale(1.5) rotate(-10deg);
+    cursor: pointer;
 } 
 .gallery2 img:hover {
     z-index: 20;
     transform: scale(1.5) rotate(10deg);
+    cursor: pointer;
 } 
 .gallery3 img:hover {
     z-index: 20;
     transform: scale(1.5) rotate(-10deg);
+    cursor: pointer;
 } 
 
 .gallery1 img:not(:hover) {transform: scale(1.1);} 
@@ -170,19 +193,22 @@ header span { line-height: 1px; }
 .gallery3 img:not(:hover) {transform: scale(1.1);} 
 
 .img1 {left: 5rem; top: 10rem;}
-.img2 {left: 15rem; top: 5rem;}
+.img2 {left: 11rem; top: 5rem;}
 .img3 {right: 10rem; top: 8rem;}
-.img4 {left: 15rem; top: 6rem;}
+.img4 {left: 11rem; top: 6rem;}
 .img5 {left: 10rem; top: 1rem;}
 
 .img6 {left: 5rem; top: 2rem;}
-.img7 {left: 15rem; top: 5rem;}
+.img7 {left: 12rem; top: 5rem;}
 .img8 {right: 10rem; top: 8rem;}
-.img9 {left: 15rem; top: 10rem;}
+.img9 {left: 13rem; top: 10rem;}
 .img10 {left: 10rem; top: 7rem;}
 
-.img11 {left: 5rem; top: 10rem;}
+.img11 {left: 5rem; top: 2rem;}
 .img12 {left: 10rem; top: 7rem;}
 .img13 {right: 2rem; top: 2rem;}
 .img14 {left: 6rem; top: 2rem;}
 .img15 {left: 10rem; top: 1rem;}
+.img16 {left: 5rem; top: 3rem;}
+.img17 {left: 6rem; top:5rem;}
+.img19 {left: 2rem; top:5rem;}
