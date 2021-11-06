@@ -35,7 +35,6 @@ ul li a {
 a,
 a:link,
 a:visited,
-a:hover,
 a:active{
     text-decoration: none;
 }
@@ -46,6 +45,7 @@ a {
 
 a:hover {
     text-decoration: #ffdf9e;
+    text-transform: lowercase;
 }
 
 header ul { margin: 0px 100px; float: right; }
