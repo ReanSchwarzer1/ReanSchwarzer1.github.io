@@ -111,10 +111,9 @@ header span { line-height: 1px; }
 
 .gallery1 {
     position: absolute;
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 450px;
+    max-width: 450px;
     left: 1%;
-    top: 100px;
     margin: 0 auto;
     border: 5px double
     #7D543E;
@@ -141,10 +140,9 @@ header span { line-height: 1px; }
 
 .gallery2 {
     position: absolute;
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 450px;
+    max-width: 450px;
     left: 40%;
-    top: 100px;
     margin: 0 auto;
     border: 5px double 
     #7D543E;
@@ -158,10 +156,9 @@ header span { line-height: 1px; }
 
 .gallery3 {
     position: absolute;
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 450px;
+    max-width: 450px;
     left: 79%;
-    top: 100px;
     margin: 0 auto;
     border: 5px double
     #7D543E;
