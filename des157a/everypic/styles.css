@@ -114,6 +114,7 @@ header span { line-height: 1px; }
     max-height: 450px;
     max-width: 450px;
     left: 1%;
+    top: 15%;
     margin: 0 auto;
     border: 5px double
     #7D543E;
@@ -144,6 +145,7 @@ header span { line-height: 1px; }
     max-height: 450px;
     max-width: 450px;
     left: 40%;
+    top: 15%;
     margin: 0 auto;
     border: 5px double 
     #7D543E;
@@ -160,6 +162,7 @@ header span { line-height: 1px; }
     max-height: 450px;
     max-width: 450px;
     left: 79%;
+    top: 15%;
     margin: 0 auto;
     border: 5px double
     #7D543E;
