@@ -32,6 +32,14 @@ ul li a {
     text-decoration: none;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
 a {
     text-decoration: none;
 }
