@@ -200,17 +200,17 @@ header span { line-height: 1px; }
 
 .gallery1 img:hover {
     z-index: 20;
-    transform: scale(1.5) rotate(-10deg);
+    transform: scale(2) rotate(-5deg);
     cursor: pointer;
 } 
 .gallery2 img:hover {
     z-index: 20;
-    transform: scale(1.5) rotate(10deg);
+    transform: scale(2) rotate(5deg);
     cursor: pointer;
 } 
 .gallery3 img:hover {
     z-index: 20;
-    transform: scale(1.5) rotate(-10deg);
+    transform: scale(2) rotate(-5deg);
     cursor: pointer;
 } 
 
