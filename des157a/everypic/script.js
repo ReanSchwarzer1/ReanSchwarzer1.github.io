@@ -19,6 +19,11 @@
     document.querySelectorAll('a[href^="#"]').forEach(anchor => { //getting all <a> elements with "href" tag
         anchor.addEventListener('click', function (e) { //listening for click (when the user clicks one of the <a> href hyperlinks)
             e.preventDefault(); 
+
+            let target = this.hash;
+            document.querySelector(this.getAttribute('href')).scrollLeft({
+                behavior: 'smooth'
+            });
     
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth' //it gets the selected attribute and the page scrolls into view wherever the user clicked with behaviour "smooth"
@@ -26,6 +31,31 @@
         });
     });
 
+
+
+    const images = document.querySelectorAll("img");
+    const modal = document.querySelector(".modal");
+    const modalImg = document.querySelector(".modalImg");
+    const modalTxt = document.querySelector(".modalTxt");
+    const close = document.querySelector(".close");
+
+    images.forEach((image) => {
+        image.addEventListener("click", () => {
+          modalImg.src = image.src;
+          modalTxt.innerHTML = image.alt;
+          modal.classList.add("appear");
+      
+          close.addEventListener("click", () => {
+            modal.classList.remove("appear");
+          });
+
+          window.onkeydown = function( event ) {
+            if ( event.keyCode == 27 ) {
+                modal.classList.remove("appear");
+            }
+        };
+        });
+    });
 })();
 
 
