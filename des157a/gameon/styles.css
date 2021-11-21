@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "centurion";
+    src: url("media/fonts/the_centurion/The\ Centurion\ .ttf");
+}
+@font-face {
+    font-family: "seagram";
+    src: url("media/fonts/seagram_tfb/Seagram\ tfb.ttf");
+}
+
+h1 {
+    font-family: "centurion";
+    text-align: center;
+    font-size: 60px;
+    color: #FFBD00;
+    font-weight: lighter;
+}
+
+a, p, h2 {
+    font-family: "seagram";
+    color: #FFBD00;
+}
+
+button {
+    font-family: "seagram";
+    background-color:#DBC0B9;
+    padding: 10px;
+}
+html {
+    
+}
+
+body {
+    font-family: "seagram";
+    background-color: #B59BBF;
+    color: #FFBD00;
+    line-height: 1.5em;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1266px;
+    height: 668px;
+    margin: auto;
+    
+}
+
+
+.dice {
+    position: relative;
+    top: 150px;
+    max-width: 220px;
+    animation: diceFade 0.5s;
+}
+
+@keyframes diceFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#players {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.player {
+    position: relative;
+}
+
+
+.slash {
+    animation: slash 0.5s linear;
+}
+
+@keyframes slash {
+    0% {
+        transform: translate(100px);
+        transform: translate(100px);
+    }
+    50% {
+        transform: translate(-100px);
+    }
+    100% {
+        transform: translate(-100px);
+    }
+}
+
+.score {
+    font-size: 3em;
+    color: #FFBD00;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+}
+
+ol {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    top: 90%;
+    right: 40%;
+    font-size: 30px;
+}
+footer a {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #000;
+}
