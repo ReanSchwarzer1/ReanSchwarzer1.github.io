@@ -111,7 +111,7 @@
 
         if (gameData.rollSum === 2) { //when snake eyes
             soundSwitch.play();
-            game.innerHTML += "<h3>Oh snap! Snake eyes!</h3>";
+            game.innerHTML += "<h3>Oh bad luck! Snake eyes!</h3>";
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1); 
             checkWinningCondition();
@@ -120,7 +120,7 @@
         } else if (gameData.roll1 === 1 || gameData.roll2 === 1) { 
             soundSwitch.play();
             gameData.index ? (gameData.index = 0) : (gameData.index = 1); 
-            game.innerHTML += `<h3>Sorry one of your rolls was a one, switching to ${gameData.players[gameData.index]}</h3>`;
+            game.innerHTML += `<h3>Your roll is a "one", switching to ${gameData.players[gameData.index]}</h3>`;
 
             setTimeout(setUpTurn, 2000); 
         } else { 
