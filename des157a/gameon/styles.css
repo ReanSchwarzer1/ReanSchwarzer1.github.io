@@ -31,14 +31,11 @@ body {
     background-color: #B59BBF;
     color: black;
     line-height: 1.5em;
-    background-image: url("images/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
     width: 1266px;
     height: 668px;
     margin: auto;
     overflow-y: hidden;
-    
+
 }
 
 
