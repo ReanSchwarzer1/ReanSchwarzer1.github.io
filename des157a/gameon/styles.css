@@ -11,13 +11,13 @@ h1 {
     font-family: "centurion";
     text-align: center;
     font-size: 60px;
-    color: #FFBD00;
+    color: black;
     font-weight: lighter;
 }
 
 a, p, h2 {
     font-family: "seagram";
-    color: #FFBD00;
+    color: black;
 }
 
 button {
@@ -25,14 +25,11 @@ button {
     background-color:#DBC0B9;
     padding: 10px;
 }
-html {
-    
-}
 
 body {
     font-family: "seagram";
     background-color: #B59BBF;
-    color: #FFBD00;
+    color: black;
     line-height: 1.5em;
     background-image: url("images/background.jpg");
     background-position: center;
@@ -91,7 +88,7 @@ body {
 
 .score {
     font-size: 3em;
-    color: #FFBD00;
+    color: black;
     position: absolute;
     top: 300px;
     left: 120px;
@@ -110,7 +107,7 @@ a {
 footer {
     position: absolute;
     top: 90%;
-    right: 40%;
+    right: 35%;
     font-size: 30px;
 }
 footer a {
@@ -119,5 +116,5 @@ footer a {
 }
 
 footer a:hover{
-    color: #000;
+    color: purple;
 }
