@@ -37,6 +37,7 @@ body {
     width: 1266px;
     height: 668px;
     margin: auto;
+    overflow-y: hidden;
     
 }
 
