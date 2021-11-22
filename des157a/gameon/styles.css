@@ -7,6 +7,10 @@
     src: url("media/fonts/seagram_tfb/Seagram\ tfb.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     font-family: "centurion";
     text-align: center;
