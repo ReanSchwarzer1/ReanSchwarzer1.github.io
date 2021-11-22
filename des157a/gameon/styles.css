@@ -39,7 +39,12 @@ body {
     height: 668px;
     margin: auto;
     overflow-y: hidden;
-
+    max-width: 1366px;
+    max-height: 768px;
+    position: relative;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 
