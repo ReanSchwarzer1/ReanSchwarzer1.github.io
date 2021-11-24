@@ -4,7 +4,14 @@
 @font-face {font-family: "Egyptsilhous";
     src: url("./fonts/Egyptsilhous-3lYZ.ttf");
 }
+@font-face {font-family: "Papyrus";
+    src: url("./fonts/ParchmentMf-Vqge.ttf");
+}
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html,
 body {
@@ -13,7 +20,10 @@ body {
     background-image: url("./images/egypt.png");
     overflow-y: hidden;
     display: flex;
+    align-self: auto;
+    display: inline-block;
 }
+
 
 header {
     position: fixed;
@@ -28,6 +38,17 @@ header {
     font-size: 30px;
     font-family: "ThroneOfEgyptRegular";
 }
+
+ul li a:hover {
+    font-family: "Papyrus";
+    font-size: 50px;
+}
+
+header a:hover {
+    font-family: "Papyrus";
+    font-size: 50px;
+}
+
 ul li a {
     text-decoration: none;
 }
@@ -61,6 +82,11 @@ header span { line-height: 1px; }
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    display: inline-block;
 }
 
 #title {
@@ -92,6 +118,20 @@ header span { line-height: 1px; }
     color:#7D543E;
     font-size: 50px;
 }
+
+#gallery-text1:hover {
+    font-family: "Papyrus";
+    font-size: 80px;
+}
+#gallery-text2:hover {
+    font-family: "Papyrus";
+    font-size: 80px;
+}
+#gallery-text3:hover {
+    font-family: "Papyrus";
+    font-size: 80px;
+}
+
 #gallery-text2 {
     position: absolute;
     bottom: 10px;
@@ -113,8 +153,8 @@ header span { line-height: 1px; }
     position: absolute;
     max-height: 450px;
     max-width: 450px;
-    left: 1%;
-    top: 15%;
+    left: 50px;
+    top: 100px;
     margin: 0 auto;
     border: 5px double
     #7D543E;
@@ -144,8 +184,8 @@ header span { line-height: 1px; }
     position: absolute;
     max-height: 450px;
     max-width: 450px;
-    left: 40%;
-    top: 15%;
+    left: 700px;
+    top: 100px;
     margin: 0 auto;
     border: 5px double 
     #7D543E;
@@ -161,8 +201,8 @@ header span { line-height: 1px; }
     position: absolute;
     max-height: 450px;
     max-width: 450px;
-    left: 79%;
-    top: 15%;
+    left: 1350px;
+    top: 100px;
     margin: 0 auto;
     border: 5px double
     #7D543E;
@@ -180,6 +220,7 @@ header span { line-height: 1px; }
     z-index: 10;
     transition: all .5s;
     box-shadow: -3px 1px 5px rgba(0,0,0,.5);
+    filter: grayscale(100%);
 }
 
 .gallery2 img {
@@ -188,6 +229,7 @@ header span { line-height: 1px; }
     z-index: 10;
     transition: all .5s;
     box-shadow: -3px 1px 5px rgba(0,0,0,.5);
+    filter: grayscale(100%);
 }
 
 .gallery3 img {
@@ -196,22 +238,26 @@ header span { line-height: 1px; }
     z-index: 10;
     transition: all .5s;
     box-shadow: -10px 10px 15px rgba(0,0,0,.5);
+    filter: grayscale(100%);
 }
 
 .gallery1 img:hover {
     z-index: 20;
     transform: scale(2) rotate(-5deg);
     cursor: pointer;
+    filter: none;
 } 
 .gallery2 img:hover {
     z-index: 20;
     transform: scale(2) rotate(5deg);
     cursor: pointer;
+    filter: none;
 } 
 .gallery3 img:hover {
     z-index: 20;
     transform: scale(2) rotate(-5deg);
     cursor: pointer;
+    filter: none;
 } 
 
 .gallery1 img:not(:hover) {transform: scale(1.1);} 
@@ -273,15 +319,22 @@ header span { line-height: 1px; }
   .modalTxt {
     margin-top: 1em;
     z-index: 200;
+    font-family: "Papyrus";
+    font-size: 80px;
   }
+
   .close {
     position: absolute;
-    top: 25em;
+    top: 0.5em;
     right: 1em;
     font-size: 1.5em;
     cursor: pointer;
     z-index: 250;
+    font-weight: bolder;
+    font-size: 80px;
+    font-family: "Papyrus";
   }
+  
   .modal.appear {
     opacity: 1;
     pointer-events: all;
