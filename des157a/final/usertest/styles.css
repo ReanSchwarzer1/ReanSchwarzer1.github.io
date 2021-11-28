@@ -43,6 +43,9 @@ body {
     display: inline-block;
 }
 
+li {
+    margin: 0;
+}
 
 header {
     position: fixed;
@@ -52,7 +55,6 @@ header {
     list-style-type: none;
     width: 100%;
     z-index: 100;
-    position: fixed;
     top: 0px;
     font-size: 30px;
     font-family: "ThroneOfEgyptRegular";
@@ -60,12 +62,21 @@ header {
 
 ul li a:hover {
     font-family: "Papyrus";
-    font-size: 50px;
+    font-size: 40px;
+    margin: 0;
+
+    border: 2px double 
+    #333333;
+    overflow: hidden;  
+    display: block;
+    margin: -10px;
 }
 
 header a:hover {
     font-family: "Papyrus";
     font-size: 50px;
+    border: 2px double 
+    #333333;
 }
 
 ul li a {
@@ -100,6 +111,11 @@ header span { line-height: 1px; }
     color: #EB7130;
 }
 
+#tile:hover {
+    font-size: 70px;
+    color: #fff;
+}
+
 
 #chars {
     font-size: 30px;
@@ -128,14 +144,20 @@ header span { line-height: 1px; }
 #gallery-text1:hover {
     font-family: "Papyrus";
     font-size: 80px;
+    border: 5px double 
+    #333333;
 }
 #gallery-text2:hover {
     font-family: "Papyrus";
     font-size: 80px;
+    border: 5px double 
+    #333333;
 }
 #gallery-text3:hover {
     font-family: "Papyrus";
     font-size: 80px;
+    border: 5px double 
+    #333333;
 }
 
 #gallery-text2 {
