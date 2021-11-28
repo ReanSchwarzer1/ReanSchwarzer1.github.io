@@ -20,34 +20,37 @@
     </header>
     <main style="overflow: scroll hidden;">
         <div class="cont">
+            <button id="map">CHECK OUT MAP</button>
+            <img style="display:none;" id="bigpic" src="./images/map.jpg" />
             <section class="gallery1">
                 <h1 id="hidden1">j</h1>
-                <img src="./images/1.jpg" alt="Alexandria Ancient Books" class="img1">
-                <img src="./images/26.jpg" alt="Alexandria Fort" class="img5">
-                <img src="./images/2.jpg" alt="Outside of Alexandria Library" class="img2">
-                <img src="./images/27.jpg" alt="Old Alexandria" class="img19">
-                <img src="./images/3.jpg" alt="Inside Library" class="img3">
+                <img src="./images/1.jpg" alt="Alexandria Ancient Books" class="img1" id="image">
+                <img src="./images/26.jpg" alt="Alexandria Fort" class="img5" id="image">
+                <img src="./images/2.jpg" alt="Outside of Alexandria Library" class="img2" id="image">
+                <img src="./images/27.jpg" alt="Old Alexandria" class="img19" id="image">
+                <img src="./images/3.jpg" alt="Inside Library" class="img3" id="image">
+                <img style = "display: none" id="bigpic" src="./images/map.jpg" alt="Map" />
                 <a href="" id="gallery-text1">ALEXANDRIA</a>
             </section>
             <section class="gallery2">
                 <h1 id="hidden2">j</h1>
-                <img src="./images/28.jpg" alt="Siwa" class="img15">
-                <img src="./images/16.jpg" alt="Black & White Desert" class="img16">
-                <img src="./images/21.jpg" alt="Flight from Cairo to Doha" class="img11">
-                <img src="./images/22.jpg" alt="Pyramids of Giza" class="img17">
-                <img src="./images/14.jpg" alt="Black & White Desert" class="img8">
-                <img src="./images/15.jpg" alt="Black & White Desert" class="img9">
-                <img src="./images/19.jpg" alt="Pyramids of Giza" class="img10">
+                <img src="./images/28.jpg" alt="Siwa" class="img15" id="image">
+                <img src="./images/16.jpg" alt="Black & White Desert" class="img16" id="image">
+                <img src="./images/21.jpg" alt="Flight from Cairo to Doha" class="img11" id="image">
+                <img src="./images/22.jpg" alt="Pyramids of Giza" class="img17" id="image">
+                <img src="./images/14.jpg" alt="Black & White Desert" class="img8" id="image">
+                <img src="./images/15.jpg" alt="Black & White Desert" class="img9" id="image">
+                <img src="./images/19.jpg" alt="Pyramids of Giza" class="img10" id="image">
                 <a href="" id="gallery-text2">GIZA & SIWA</a>
             </section>
             <section class="gallery3">
                 <h1 id="hidden3">j</h1>
-                <img src="./images/10.jpg" alt="Old Cairo" class="img6">
-                <img src="./images/24.jpg" alt="Hurghada" class="img14">
-                <img src="./images/11.jpg" alt="Cairo" class="img7">
-                <img src="./images/7.jpg" alt="National Museum in Cairo" class="img5">
-                <img src="./images/23.jpg" alt="Hurghada Diving" class="img13">
-                <img src="./images/5.jpg" alt="New Cairo" class="img4">
+                <img src="./images/10.jpg" alt="Old Cairo" class="img6" id="image">
+                <img src="./images/24.jpg" alt="Hurghada" class="img14" id="image">
+                <img src="./images/11.jpg" alt="Cairo" class="img7" id="image">
+                <img src="./images/7.jpg" alt="National Museum in Cairo" class="img5" id="image">
+                <img src="./images/23.jpg" alt="Hurghada Diving" class="img13" id="image">
+                <img src="./images/5.jpg" alt="New Cairo" class="img4" id="image">
                 <a href="" id="gallery-text3">HURGHADA & CAIRO</a>
             </section>
         </div>
@@ -61,7 +64,13 @@
                 <button type="button" class="nextBtn">Next</button>
               </div>
             </div>
-          </div>
+        </div>
+        <div class="modal2">
+            <span class="mapclose">X</span>
+            <div class="modal2Content">
+              <img src="_blank" alt = "Map" class="modal2Img" />
+            </div>
+        </div>
     </main>
 </body>
 </html>

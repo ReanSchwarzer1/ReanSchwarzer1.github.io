@@ -116,6 +116,29 @@ header span { line-height: 1px; }
     color: #fff;
 }
 
+#map {
+    border-radius: 10px;
+    background-color: white;
+    padding: 7px 10px 7px 10px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    right: 683px;
+    top: 650px;
+    font-family: "ThroneOfEgyptRegular";
+    font-size: 30px;
+    border: 5px double
+    #7D543E; 
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+    background: #ffdf9e; 
+    background-image: url(./images/noise.jpg);
+    z-index: 15;
+    cursor: pointer;
+}
+
+#map:hover {
+    font-family: "Papyrus";
+}
 
 #chars {
     font-size: 30px;
@@ -331,6 +354,8 @@ header span { line-height: 1px; }
     pointer-events: none;
     z-index: 200;
   }
+
+
   .modalContent {
     min-height: 100vh;
     display: flex;
@@ -344,6 +369,7 @@ header span { line-height: 1px; }
     max-width: 600px;
     z-index: 200;
   }
+
   .modalTxt {
     margin-top: 1em;
     z-index: 200;
@@ -388,10 +414,12 @@ header span { line-height: 1px; }
     pointer-events: all;
     z-index: 200;
   }
-  .modal.appear .modalImg,
+  .modal.appear .map_modal_Img,
   .modal.appear .modalTxt {
     animation: zoom 0.3s linear;
   }
+
+
   @keyframes zoom {
     from {
       transform: scale(0);
@@ -400,6 +428,91 @@ header span { line-height: 1px; }
       transform: scale(1);
     }
   }
+
+
+
+
+
+
+  .modal2 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 200;
+  }
+
+
+  .modal2Content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+  }
+  .modal2Img {
+    width: 80%;
+    max-width: 550px;
+    z-index: 200;
+  }
+
+  .modal2Txt {
+    margin-top: 1em;
+    z-index: 200;
+    font-family: "Papyrus";
+    font-size: 50px;
+  }
+
+  .modal2Nav {
+    margin-top: 1em;
+  }
+  .modal2Nav button {
+    padding: 10px 45px;
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+	background: #ffdf9e; 
+    background-image: url(./images/noise.jpg);
+    border: 5px double 
+    #7D543E;
+    outline: none;
+    cursor: pointer;
+    color: white;
+  }
+  .nextBtn, .prevBtn {
+    font-family: "Papyrus";
+    font-size: 30px;
+  }
+
+
+  .mapclose {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 250;
+    font-weight: bolder;
+    font-size: 80px;
+    font-family: "Papyrus";
+  }
+  
+  .modal2.appear {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 200;
+  }
+  .modal2.appear .modal2Img,
+  .modal2.appear .modal2Txt {
+    animation: zoom 0.3s linear;
+  }
+
 
 
 

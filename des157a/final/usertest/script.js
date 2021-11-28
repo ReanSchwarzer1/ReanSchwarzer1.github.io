@@ -15,7 +15,7 @@
         else {item.scrollLeft -= 100;} //scrolls right
     });
 
-
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => { //getting all <a> elements with "href" tag
         anchor.addEventListener('click', function (e) { //listening for click (when the user clicks one of the <a> href hyperlinks)
             e.preventDefault(); 
@@ -55,15 +55,44 @@
     }
     */
 
+    const mapBtn = document.querySelector("#map");
+
+    mapBtn.addEventListener("click", () => {
+      modal2Img.src = image.src = "./images/map.jpg";
+      modal2.classList.add("appear");
+
+      window.addEventListener("keyup", (e) => {
+        if (e.keyCode === 27) {
+          modal2.classList.remove("appear");
+        }
+      });
+  
+      mapclose.addEventListener("click", () => {
+        modal2.classList.remove("appear");
+      });
+    });
 
 
-    const images = document.querySelectorAll("img");
+
+
+
+    const images = document.querySelectorAll("#image");
     const modal = document.querySelector(".modal");
+    const modal2 = document.querySelector(".modal2");
     const modalImg = document.querySelector(".modalImg");
+    const modal2Img = document.querySelector(".modal2Img");
     const modalTxt = document.querySelector(".modalTxt");
     const close = document.querySelector(".close");
+    const mapclose = document.querySelector(".mapclose");
     const prevBtn = document.querySelector(".prevBtn");
     const nextBtn = document.querySelector(".nextBtn");
+
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+
+    navLinks.forEach(function(eachLink) {
+      eachLink.addEventListener('click', smoothScroll);
+    });
 
     images.forEach((image, index) => {
         image.addEventListener("click", () => {
@@ -102,6 +131,11 @@
             modalTxt.innerHTML = images[prev].alt;
             prev--;
             next = prev + 2;
+            if (next >= images.length) {
+              next = 0;
+            } else if (prev < 0) {
+              prev = images.length - 1;
+            }
           });
       
           nextBtn.addEventListener("click", () => {
@@ -109,11 +143,17 @@
             modalTxt.innerHTML = images[next].alt;
             next++;
             prev = next - 2;
+            if (next >= images.length) {
+              next = 0;
+            } else if (prev < 0) {
+              prev = images.length - 1;
+            }
           });
       
           close.addEventListener("click", () => {
             modal.classList.remove("appear");
           });
+
         });
       });
     // alert (information) for the user to know what to do when they visit the website
