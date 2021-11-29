@@ -157,7 +157,7 @@
         });
       });
     // alert (information) for the user to know what to do when they visit the website
-    alert("Welcome to my user test!\nWhile you're here, please try out the following steps:\nHover over the text\nTry scrolling over horizontally\nHover over all the images\nClick any of the images\nCycle through the images\nClick on the 'Check out map' button");
+    alert("Welcome to my user test!\nWhile you're here, please try out the following steps:\nHover over the text\nTry scrolling over horizontally using shift+mousescroll\nHover over all the images\nClick any of the images\nCycle through the images\nClick on the 'Check out map' button");
 
 
 })();
