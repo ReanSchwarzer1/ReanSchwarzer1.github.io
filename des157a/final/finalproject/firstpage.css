@@ -1,0 +1,55 @@
+@font-face {font-family: "ThroneOfEgyptRegular";
+    src: url("./fonts/ThroneOfEgyptRegular-AoM7.ttf");
+}
+@font-face {font-family: "Egyptsilhous";
+    src: url("./fonts/Egyptsilhous-3lYZ.ttf");
+}
+@font-face {font-family: "Papyrus";
+    src: url("./fonts/ParchmentMf-Vqge.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color:#FF9257;
+    align-self: auto;
+    display: inline-block;
+
+    margin: auto;
+    max-width: 1366px;
+    max-height: 768px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    max-height: 1266px;
+    max-height: 668px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    font-family: "Egyptsilhous";
+    font-size: 80px;
+    text-align: center;
+    color: #7D543E;
+}
+
+.ticket {
+    position: relative;
+    justify-content: center;
+}
+
+.ticket:hover {
+    cursor:pointer;
+    filter: drop-shadow(40px);
+    filter: brightness(50%);
+    transition: all 0.50s;
+}

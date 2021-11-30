@@ -1,0 +1,587 @@
+@font-face {font-family: "ThroneOfEgyptRegular";
+    src: url("./fonts/ThroneOfEgyptRegular-AoM7.ttf");
+}
+@font-face {font-family: "Egyptsilhous";
+    src: url("./fonts/Egyptsilhous-3lYZ.ttf");
+}
+@font-face {font-family: "Papyrus";
+    src: url("./fonts/ParchmentMf-Vqge.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#alert {
+    text-align: center;
+    color: #7D543E;
+}
+
+html,
+body {
+    max-width: 1366px;
+    min-width: 900px;
+    background-image: url("./images/egypt.png");
+    overflow-y: hidden;
+    display: flex;
+    align-self: auto;
+    display: inline-block;
+}
+
+.cont {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    display: inline-block;
+}
+
+li {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    padding: 10px;
+    background-color: #7D543E;
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    z-index: 5;
+    top: 0px;
+    font-size: 30px;
+    background-image: url(./images/tex.png);
+    font-family: "ThroneOfEgyptRegular";
+
+}
+
+ul li a:hover {
+    font-family: "Papyrus";
+    font-size: 40px;
+    margin: 0;
+
+    border: 2px double 
+    #333333;
+    overflow: hidden;  
+    display: block;
+    margin: -10px;
+}
+
+header a:hover {
+    font-family: "Papyrus";
+    font-size: 50px;
+    border: 2px double 
+    #333333;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active{
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: #ffdf9e;
+    text-transform: lowercase;
+}
+
+header ul { margin: 0px 100px; float: right; }
+header ul li { list-style: none; float: left; margin: 0px; padding: 13px; text-transform: uppercase;}
+header ul li a { color: #FF9257; list-style: none; text-decoration: none;}
+header ul li a:hover { color: #fff; }
+header span { line-height: 1px; }
+
+
+#title {
+    font-size: 40px;
+    color: #FF9257;
+}
+
+#tile:hover {
+    font-size: 70px;
+    color: #fff;
+}
+
+#map {
+    border-radius: 10px;
+    background-color: white;
+    padding: 7px 10px 7px 10px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    right: 0;
+    top: 650px;
+    font-family: "ThroneOfEgyptRegular";
+    font-size: 30px;
+    border: 5px double
+    #7D543E; 
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+    background: #ffdf9e; 
+    background-image: url(./images/noise.jpg);
+    z-index: 15;
+    cursor: pointer;
+}
+
+#map:hover {
+    font-family: "Papyrus";
+}
+
+#info {
+  border-radius: 10px;
+  background-color: white;
+  padding: 7px 10px 7px 10px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  left: 0;
+  top: 650px;
+  font-family: "ThroneOfEgyptRegular";
+  font-size: 30px;
+  border: 5px double
+  #7D543E; 
+  box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+  background: #ffdf9e; 
+  background-image: url(./images/noise.jpg);
+  z-index: 15;
+  cursor: pointer;
+}
+
+#info:hover {
+  font-family: "Papyrus";
+}
+
+#chars {
+    font-size: 30px;
+    color: #EB7130;
+    font-family: "Egyptsilhous";
+}
+#hidden1 {
+    visibility: hidden;
+}
+#hidden2 {
+    visibility: hidden;
+}
+#hidden3 {
+    visibility: hidden;
+}
+
+#gallery-text1 {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    font-family: "ThroneOfEgyptRegular";
+    color:#7D543E;
+    font-size: 50px;
+}
+
+#gallery-text1:hover {
+    font-family: "Papyrus";
+    font-size: 80px;
+    border: 5px double 
+    #333333;
+}
+#gallery-text2:hover {
+    font-family: "Papyrus";
+    font-size: 80px;
+    border: 5px double 
+    #333333;
+}
+#gallery-text3:hover {
+    font-family: "Papyrus";
+    font-size: 80px;
+    border: 5px double 
+    #333333;
+}
+
+#gallery-text2 {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    font-family: "ThroneOfEgyptRegular";
+    color:#7D543E;
+    font-size: 50px;
+}
+#gallery-text3 {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+    font-family: "ThroneOfEgyptRegular";
+    color:#7D543E;
+    font-size: 50px;
+}
+
+.gallery1 {
+    position: absolute;
+    max-height: 450px;
+    max-width: 450px;
+    left: 50px;
+    top: 100px;
+    margin: 0 auto;
+    border: 5px double
+    #7D543E;
+    width: 100%;
+    height: 100%; 
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+    background: #ffdf9e; 
+    background-image: url(./images/noise.jpg);
+    z-index: 15;
+}
+
+.gallery1 a{
+    text-decoration: none;
+}
+
+.gallery2 a{
+    text-decoration: none;
+}
+
+.gallery3 a{
+    text-decoration: none;
+}
+
+
+
+.gallery2 {
+    position: absolute;
+    max-height: 450px;
+    max-width: 450px;
+    left: 700px;
+    top: 100px;
+    margin: 0 auto;
+    border: 5px double 
+    #7D543E;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+    background: #ffdf9e; 
+    background-image: url(./images/noise.jpg);
+    z-index: 15;
+}
+
+.gallery3 {
+    position: absolute;
+    max-height: 450px;
+    max-width: 450px;
+    left: 1350px;
+    top: 100px;
+    margin: 0 auto;
+    border: 5px double
+    #7D543E;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+	background: #ffdf9e; 
+    background-image: url(./images/noise.jpg);
+    z-index: 15;
+}
+
+.gallery1 img {
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    box-shadow: -3px 1px 5px rgba(0,0,0,.5);
+    filter: grayscale(100%);
+}
+
+.gallery2 img {
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    box-shadow: -3px 1px 5px rgba(0,0,0,.5);
+    filter: grayscale(100%);
+}
+
+.gallery3 img {
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: all .5s;
+    box-shadow: -10px 10px 15px rgba(0,0,0,.5);
+    filter: grayscale(100%);
+}
+
+.gallery1 img:hover {
+    z-index: 20;
+    transform: scale(2) rotate(-5deg);
+    cursor: pointer;
+    filter: none;
+} 
+.gallery2 img:hover {
+    z-index: 20;
+    transform: scale(2) rotate(5deg);
+    cursor: pointer;
+    filter: none;
+} 
+.gallery3 img:hover {
+    z-index: 20;
+    transform: scale(2) rotate(-5deg);
+    cursor: pointer;
+    filter: none;
+} 
+
+.gallery1 img:not(:hover) {transform: scale(1.1);} 
+.gallery2 img:not(:hover) {transform: scale(1.1);} 
+.gallery3 img:not(:hover) {transform: scale(1.1);} 
+
+.img1 {left: 5rem; top: 10rem;}
+.img2 {left: 11rem; top: 5rem;}
+.img3 {right: 10rem; top: 8rem;}
+.img4 {left: 11rem; top: 6rem;}
+.img5 {left: 10rem; top: 1rem;}
+
+.img6 {left: 5rem; top: 2rem;}
+.img7 {left: 12rem; top: 5rem;}
+.img8 {right: 10rem; top: 8rem;}
+.img9 {left: 13rem; top: 10rem;}
+.img10 {left: 10rem; top: 7rem;}
+
+.img11 {left: 5rem; top: 2rem;}
+.img12 {left: 10rem; top: 7rem;}
+.img13 {right: 2rem; top: 2rem;}
+.img14 {left: 6rem; top: 2rem;}
+.img15 {left: 10rem; top: 1rem;}
+.img16 {left: 5rem; top: 3rem;}
+.img17 {left: 6rem; top:5rem;}
+.img19 {left: 2rem; top:5rem;}
+
+
+
+
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 200;
+  }
+
+
+  .modalContent {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+  }
+  .modalImg {
+    width: 80%;
+    max-width: 600px;
+    z-index: 200;
+  }
+
+  .modalTxt {
+    margin-top: 1em;
+    z-index: 200;
+    font-family: "Papyrus";
+    font-size: 50px;
+  }
+
+  .modalNav {
+    margin-top: 1em;
+  }
+  .modalNav button {
+    padding: 10px 45px;
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+	background: #ffdf9e; 
+    background-image: url(./images/noise.jpg);
+    border: 5px double 
+    #7D543E;
+    outline: none;
+    cursor: pointer;
+    color: white;
+  }
+  .nextBtn, .prevBtn {
+    font-family: "Papyrus";
+    font-size: 30px;
+  }
+
+
+  .close {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 250;
+    font-weight: bolder;
+    font-size: 80px;
+    font-family: "Papyrus";
+  }
+  
+  .modal.appear {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 200;
+  }
+  .modal.appear .map_modal_Img,
+  .modal.appear .modalTxt {
+    animation: zoom 0.3s linear;
+  }
+
+
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+
+  .modal2 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 200;
+  }
+
+
+  .modal2Content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+  }
+  .modal2Img {
+    width: 80%;
+    max-width: 550px;
+    z-index: 200;
+  }
+
+  .modal2Nav {
+    margin-top: 1em;
+  }
+  .modal2Nav button {
+    padding: 10px 45px;
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+	  background: #ffdf9e; 
+    background-image: url(./images/noise.jpg);
+    border: 5px double 
+    #7D543E;
+    outline: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  .mapclose {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 250;
+    font-weight: bolder;
+    font-size: 80px;
+    font-family: "Papyrus";
+  }
+  
+  .modal2.appear {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 200;
+  }
+  .modal2.appear .modal2Img,
+  .modal2.appear .modal2Txt {
+    animation: zoom 0.3s linear;
+  }
+
+
+  .modal3 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 200;
+  }
+
+
+  .modal3Content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+  }
+
+  .modal3Txt {
+    margin-top: 1em;
+    z-index: 200;
+    font-family: "Papyrus";
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .modal3Nav {
+    margin-top: 1em;
+  }
+
+  .infoclose {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 250;
+    font-weight: bolder;
+    font-size: 80px;
+    font-family: "Papyrus";
+  }
+  
+  .modal3.appear {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 200;
+  }
+
+  .modal3.appear .modal3Txt {
+    animation: zoom 0.3s linear;
+  }
+
+
+
