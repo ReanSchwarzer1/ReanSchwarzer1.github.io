@@ -584,4 +584,78 @@ header span { line-height: 1px; }
   }
 
 
+#preloader {
+  opacity: 1;
+  background-color: #7D543E;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+@keyframes fadeaway {
+  to {
+      opacity: 0;
+  }
+}
+
+.fadeout {
+  pointer-events: none;
+  animation: fadeaway 1s;
+}
+
+#loading {
+  margin-top: 15%;
+  font-family: "Papyrus";
+  justify-content: center;
+  text-align: center;
+  color: #FF9257;
+  font-size: 80px;
+}
+
+#loadingtext {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  font-family: "Papyrus";
+  font-size: 50px;
+}
+
+#loadingbar {
+  margin: auto;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  background: #FF9257;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 10px double 
+    #333333;
+    background-image: url(./images/noise.jpg);
+}
+
+@keyframes loadingAnim {
+  to {
+      width: 190px;
+  }
+}
+
+.loadingAnimClass {
+  animation: linear loadingAnim 2s forwards;
+}
+
+#innerloadingbar {
+  background: black;
+  position: absolute;
+  left: 5px;
+  width: 0;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+
 

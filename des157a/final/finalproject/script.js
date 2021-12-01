@@ -90,6 +90,20 @@
       });
     });
 
+    // loading animation
+    window.addEventListener("load", function () {
+      const loadingbar = document.getElementById("innerloadingbar");
+      loadingbar.className = "loadingAnimClass";
+      setTimeout(() => {
+          const preloader = document.getElementById("preloader");
+          preloader.className = "fadeout";
+
+          setTimeout(() => {
+              preloader.style.display = "none";
+          }, 1000);
+      }, 2000);
+    });
+
 
 
 
